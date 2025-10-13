@@ -11,4 +11,7 @@ df = pd.DataFrame(data)
 print(df)
 
 print(df.loc[df["salary"] > 30000, ["Name", "salary"]])
-print(df.loc[df["Performance Score"]>85,["Name"]])
+print(df.loc[df["Performance Score"] > 85, ["Name"]])
+print(df["Name"])
+print(df.info())
+print(df.loc[df["Performance Score"]>=90,["Name"]])
